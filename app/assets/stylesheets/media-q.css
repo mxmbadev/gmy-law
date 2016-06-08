@@ -1,0 +1,45 @@
+@media only screen and (max-width:500px){
+  nav.navbar .navbar-brand{
+    font-size: 20px;
+  }
+  .btn.slogan-btn{
+    margin-bottom: 10px;
+  }
+  header .intro-text {
+    padding-top: 220px;
+    text-align: left;
+  }
+}
+
+@media (max-width: 1024px) {
+    nav.navbar .navbar-header {
+        float: none;
+    }
+    .navbar-collapse .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-header .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    nav .navbar-collapse.collapse {
+      display: none!important;
+    }
+    nav .navbar-collapse .navbar-nav {
+      float: none!important;
+      margin-top: 7.5px;
+  }
+  nav .navbar-collapse .navbar-nav > li {
+    float: none;
+  }
+  nav .navbar-collapse .navbar-nav > li > a {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  nav .navbar-collapse.collapse.in{
+    display:block !important;
+  }
+}

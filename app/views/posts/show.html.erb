@@ -1,0 +1,44 @@
+<style>
+  header.blog-show-bg{
+    background: url(<%= randomized_background_image %>);
+    background-repeat: none;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: center;
+    color: white;
+    height: auto;
+    padding: 160px 0;
+  }
+</style>
+
+<header class="blog-show-bg">
+  <div class="container">
+    <div class="intro-text">
+      <h1><%= @post.title %></h1>
+    </div>
+    </div>
+  </div>
+</header>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-8 center-block blog-p">
+      <h1 style="text-align:center;"><%= @post.title %></h1>
+      <p class="date" style="text-align: center;"><%= @post.date %></p>
+      <%= markdown @post.content%>
+    </div>
+    <% if user_signed_in? %>
+      <div class="col-md-4 center-block">
+        <%= link_to "Edit", edit_post_path(@post), class: "btn btn-default edit" %>
+        <%= link_to "Delete", post_path(@post), method: :delete, data: { confirm: "Are you sure you want to delete this post?"}, class: "btn btn-default delete" %>
+        <%= link_to "New Post", new_post_path, class: "btn btn-default btn-new-post" %>
+        <%= link_to "All Posts", post_path, class: "btn btn-default all-posts" %>
+      </div>
+    <%end%>
+  </div>
+</div>
+<br>

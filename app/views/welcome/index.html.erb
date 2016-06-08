@@ -1,0 +1,110 @@
+<header>
+  <div class="container">
+    <div class="intro-text">
+      <h2>John C. McLemore, PPLC</h2>
+      <hr>
+      <div>
+        <h3 style="display: inline-block; padding-right: 20px;">Energy</h3><h3 style="display: inline-block; padding-right: 20px;">Focus</h3><h3 style="display: inline-block;">Expertise</h3>
+      </div>
+      <br>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT SECTION -->
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-12 content-space">
+      <h1>About</h1>
+      <hr>
+      <h4>Our History</h4>
+    </div>
+    <div class="col-md-6 content-space content-space-bottom">
+      <p>John C. McLemore, PLLC is a boutique law firm specializing in complex Chapter 7 bankruptcy. We represent debtors in bankruptcy.
+        John is a member of the Trustee Panel for the Middle District of Tennessse and is periodically appointed reciever
+        by the state and federal courts.</p>
+      <p>John McLemore has a longstanding track record of success and has handled many high-profile
+        bankruptcy cases and receiverships. From unscrambling Ponzi schemes to custom-crafting
+        bankruptcy strategy, we are on your side every step of the way. When John takes your case, you get
+        a 35-year veteran in Chapter 7 bankruptcy. He knows the playing field. Plus, he has an investigator, bookkeeper, and
+        experienced support team to help you navigate the complex waters of Chapter 7 bankruptcy.</p>
+      <br>
+      <a href="<%= welcome_about_path %>" class="btn btn-blue">Learn More</a>
+    </div>
+
+    <div class="col-md-4 col-md-offset-2">
+      <img src="assets/john.png" alt="John C. McLemore" class="about-img">
+    </div>
+
+  </div>
+</div>
+
+<!-- WORK SECTION -->
+
+<div class="container-fluid blue-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 content-space">
+        <h1>Work</h1>
+        <hr>
+        <h4>What We Fight For</h4>
+      </div>
+      <div class="col-md-6 content-space">
+        <div class="border col-md-6">
+          <img src="assets/bankruptcy.png" alt="" class="money">
+          <h3 style="text-align: center;">Bankruptcy</h3>
+        </div>
+      </div>
+      <div class="col-md-6 content-space">
+        <p>
+          We are your best advocate when it comes to complex Chapter 7 bankruptcy. Whether you&#39;re a bank,large corporation, small-to- medium-sized business, or high net worth individual, we providecustomized solutions to ensure the successful resolution of your case. Our services include helpingindividuals and businesses file for debt relief, devise a bankruptcy strategy, recover funds, and serveas a trustee or receiver in bankruptcy cases.
+        </p>
+        <a href="<%= welcome_work_path %>" class="btn btn-work">Learn More</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SLOGAN -->
+
+<div class="container-fluid mtn-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6">
+        <h1>Over <span style="font-weight: bold;">35</span> Years of <span style="font-weight: bold;">Experience</span> In Our Community</h1>
+      </div>
+
+      <div class="col-md-4 col-md-offset-2 content-space">
+        <div class="col-md-6 col-sm-3">
+          <a href="<%= welcome_about_path %>" class="btn btn-white slogan-btn">Learn More</a>
+        </div>
+        <div class="col-md-6 col-sm-3">
+          <a href="#" class="btn btn-white">Contact</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="container-fluid blue-bg">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 content-space">
+        <h1>News</h1>
+        <hr>
+        <h4></h4>
+      </div>
+    </div>
+    <div class="row content-space">
+      <% @posts.each do |post| %>
+        <div class="col-md-6">
+          <h3><%= link_to post.title, post, class: "news-links" %></h3>
+          <p class="dates"> <%= post.created_at.strftime("%A, %b %d") %> </p>
+          <p class="pre-content"><%= truncate(post.content, length: 100)%></p>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>

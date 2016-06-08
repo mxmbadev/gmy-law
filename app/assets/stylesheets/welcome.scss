@@ -1,0 +1,188 @@
+// Place all the styles related to the Welcome controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+$blue: #223a54;
+$b_grey: #9caab2;
+
+header {
+  background-image: url('/assets/train.jpg');
+  background-repeat: none;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: white;
+  height: 100vh;
+}
+header .intro-text {
+  padding-top: 320px;
+
+  text-align: left;
+}
+
+.content-space{
+  padding-top: 3%;
+}
+.content-space-bottom{
+  padding-bottom: 3%;
+}
+
+.head-title{
+  border-right: 2px solid #000;
+}
+
+
+// ABOUT SECTION
+
+  .about-img{
+    max-width: 80%;
+  }
+  .about-img2{
+    max-width: 95%;
+  }
+
+  p{
+    letter-spacing: 2px;
+    font-size: 15px;
+  }
+
+  .btn-blue{
+    background-color: none;
+    border-radius: 0;
+    border: 2px solid $blue;
+    color: $blue;
+    font-weight: 100;
+    padding: 15px 20px;
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
+    -webkit-transition: background-color 1s ease-in-out, color 1s ease-in-out;
+    -o-transition: background-color 1s ease-in-out, color 1s ease-in-out;
+    -moz-transition: background-color 1s ease-in-out, color 1s ease-in-out;
+  }
+
+  .btn-blue:hover{
+    background-color: $blue;
+    color: #fff;
+    font-weight: 100;
+    padding: 15px 20px;
+    transition: background-color 1s ease-in-out, color 1s ease-in-out;
+    -webkit-transition: background-color 1s ease-in-out, color 1s ease-in-out;
+    -o-transition: background-color 1s ease-in-out, color 1s ease-in-out;
+    -moz-transition: background-color 1s ease-in-out, color 1s ease-in-out;
+  }
+
+// WORK SECTION
+
+  .sub-title{
+    font-weight: bold;
+  }
+
+  .blue-bg{
+    background: $blue;
+    padding-bottom: 3%;
+    h1, h4, h3, p {
+      color: #fff;
+    } p{
+      font-weight: 100;
+    }.border{
+      border: 2px solid #fff;
+    }img{
+      max-width: 100%;
+    }
+  }
+
+  .btn-work:hover{
+    background-color: #fff;
+    border-radius: 0;
+    border: 2px solid $blue;
+    color: $blue;
+    font-weight: 100;
+    padding: 15px 20px;
+    transition: background-color 1s ease-in-out, color 1s ease-in-out, border .3s ease-in-out;
+    -webkit-transition: background-color 1s ease-in-out, color 1s ease-in-out, border .3s ease-in-out;
+    -o-transition: background-color 1s ease-in-out, color 1s ease-in-out, border .3s ease-in-out;
+    -moz-transition: background-color 1s ease-in-out, color 1s ease-in-out, border .3s ease-in-out;
+  }
+
+  .btn-work{
+    background-color: $blue;
+    border: 2px solid #fff;
+    color: #fff;
+    font-weight: 100;
+    border-radius: 0px;
+    padding: 15px 20px;
+    transition: background-color 1s ease-in-out, color 1s ease-in-out, border .3s ease-in-out;
+    -webkit-transition: background-color 1s ease-in-out, color 1s ease-in-out, border .3s ease-in-out;
+    -o-transition: background-color 1s ease-in-out, color 1s ease-in-out, border .3s ease-in-out;
+    -moz-transition: background-color 1s ease-in-out, color 1s ease-in-out, border .3s ease-in-out;
+  }
+
+// SLOGAN SECTION
+
+  .mtn-bg{
+    background-image: url('/assets/purple-mtn.jpg');
+    background-repeat: none;
+    background-attachment: scroll;
+    background-position: center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+    text-align: left;
+    padding: 100px 0px;
+    color: #fff;
+    h1 {
+      font-weight: 100;
+    } .btn-white{
+      background-color: none;
+      border-radius: 0;
+      border: 2px solid #fff;
+      color: #fff;
+      font-weight: 100;
+      padding: 15px 30px;
+      transition: background-color 1s ease-in-out, color 1s ease-in-out;
+      -webkit-transition: background-color 1s ease-in-out, color 1s ease-in-out;
+      -o-transition: background-color 1s ease-in-out, color 1s ease-in-out;
+      -moz-transition: background-color 1s ease-in-out, color 1s ease-in-out;
+    }
+
+    .btn-white:hover{
+      background-color: #fff;
+      color: $blue;
+      font-weight: 100;
+      padding: 15px 30px;
+      transition: background-color 1s ease-in-out, color 1s ease-in-out;
+      -webkit-transition: background-color 1s ease-in-out, color 1s ease-in-out;
+      -o-transition: background-color 1s ease-in-out, color 1s ease-in-out;
+      -moz-transition: background-color 1s ease-in-out, color 1s ease-in-out;
+    }
+  }
+
+  // NEWS
+
+  .news-links{
+    color: #fff;
+  }
+
+  .news-links:hover{
+    color: #fff;
+    cursor: pointer;
+  }
+
+// CONTACT MODAL
+
+  .modal-content{
+    border-radius: 0;
+    border: none;
+  }
+
+
+// FOOTER
+
+  .footer-bg{
+    background: $b_grey;
+    padding-bottom: 3%;
+  }

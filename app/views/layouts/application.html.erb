@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>John C. McLemore, PLLC</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+
+
+<% if notice %>
+  <div id="notice-wrapper">
+    <p class="notice"><%= notice %></p>
+  </div>
+<%elsif alert%>
+  <div id="notice-wrapper">
+    <p class="alert"><%= alert %></p>
+  </div>
+<%end%>
+  <nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <!-- Brand and toggle get grouped for better mobile display -->
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <!-- <a class="navbar-brand" href="<%= root_path %>">John C. McLemore, PLLC</a> -->
+        <a href="<%= new_user_session_path %>" class="navbar-brand">John C. McLemore, PLLC</a>
+      </div>
+
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a class="hvr-underline-reveal" href="<%= root_path %>">Home</a></li>
+          <li><a class="hvr-underline-reveal" href="<%= welcome_about_path %>">About</a></li>
+          <li><a class="hvr-underline-reveal" href="<%= welcome_work_path %>">Work</a></li>
+          <li><a class="hvr-underline-reveal" href="<%= posts_path%>">News</a></li>
+          <li><a class="hvr-underline-reveal" href="#contactModal" data-toggle="modal">Contact</a></li>
+        <% if user_signed_in? %>
+            <li><a class="hvr-underline-reveal" href="<%= new_post_path %>">New Post</a></li>
+            <li><%= link_to "Sign Out", destroy_user_session_path, method: :delete, class: "hvr-sweep-to-top signout" %></li>
+        <%end%>
+        </ul>
+      </div><!-- /.navbar-collapse -->
+    </div><!-- /.container-fluid -->
+
+  </nav>
+
+<%= yield %>
+
+  <!-- CONTACT MODAL -->
+  <div class="modal fade" id="contactModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h3 class="modal-title" id="myModalLabel">Get in Touch</h3>
+        </div>
+        <div class="modal-body">
+          <div class="row content-space content-space-bottom">
+            <div class="col-md-6">
+              <h4>John C. McLemore, PLLC</h4>
+              <h5>2000 Richard Jones Road, Suite 250
+                Nashville, Tennessee 37215
+              </h5>
+            </div>
+            <div class="col-md-6">
+              <h5>Tel: <a href="tel: 615-383-9495">615.383.9495</a></h5>
+              <h5>Fax: <a href="fax: 615-292-9848">615.292.9848</a></h5>
+              <h5>Email: <a href="mailto:jmclemore@gmylaw.com">jmclemore@gmylaw.com</a></h5>
+            </div>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-new-post" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div class="container-fluid footer-bg">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12 content-space">
+          <h1>Contact</h1>
+          <hr>
+          <h4>Get In Touch</h4>
+        </div>
+      </div>
+
+      <div class="row content-space">
+        <div class="col-md-6">
+          <h3>John C. McLemore, PLLC</h3>
+          <h4>2000 Richard Jones Road, Suite 250
+            Nashville, Tennessee 37215
+          </h4>
+        </div>
+        <div class="col-md-6">
+          <h4>Tel: <a href="tel: 615-383-9495">615.383.9495</a></h4>
+          <h4>Fax: <a href="fax: 615-292-9848">615.292.9848</a></h4>
+          <h4>Email: <a href="mailto:jmclemore@gmylaw.com">jmclemore@gmylaw.com</a></h4>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row content-space">
+      <div class="col-md-12">
+        <p>Tennessee law requires that we inform you that this is an advertisement.  The information you obtain at this site is not, nor is it intended to be, legal advice. You should consult an attorney for advice regarding your individual situation. We invite you to contact us and welcome your calls, letters and electronic mail. Contacting us does not create an attorney-client relationship. Please do not send any confidential information to us until such time as an attorney-client relationship has been established.</p>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+
+</html>

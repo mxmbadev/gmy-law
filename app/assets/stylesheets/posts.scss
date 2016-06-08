@@ -1,0 +1,145 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+header.blog-bg{
+  background-image: url('/assets/mtn-lake-edit-2.jpg');
+  background-repeat: none;
+  background-attachment: scroll;
+  background-position: center center;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  text-align: center;
+  color: white;
+  height: 100vh;
+}
+
+header.blog-show-bg .intro-text {
+  padding: 60px 60px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.67);
+}
+
+.blog-show-bg .intro-text h1{
+  font-size: 50px;
+  color: #000;
+}
+
+.blog-p{
+  padding-top: 15%;
+  padding-bottom: 15%;
+  p{
+    font-weight: 100;
+    letter-spacing: 1px;
+    font-size: 15px;
+    padding-top: 20px;
+  }
+}
+
+.posts h1 a{
+  color: #000;
+  letter-spacing: 1px;
+}
+
+.pre-content{
+color: #000;
+letter-spacing: 1px;
+font-size: 15px;
+}
+
+.date{
+  color: #A7A7A7;
+  letter-spacing: 2px;
+}
+
+.btn-new-post{
+  background-color: #FFFFFF;
+  color: #0B6CF7;
+  border: 2px solid #0B6CF7;
+  border-radius: 0;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  -webkit-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  -o-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.btn-new-post:hover{
+  background-color: #0B6CF7;
+  color: #fff;
+  border: 2px solid #0B6CF7;
+  border-radius: 0;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  -webkit-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  -o-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.edit{
+  background-color: #FFFFFF;
+  color: #FF9831;
+  border: 2px solid #FF9831;
+  border-radius: 0;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  -webkit-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  -o-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.edit:hover{
+  background-color: #FF9831;
+  color: #fff;
+  border: 2px solid #FF9831;
+  border-radius: 0;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  -webkit-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  -o-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+
+.delete{
+  background-color: #FFFFFF;
+  color: #FF1C10;
+  border: 2px solid #FF1C10;
+  border-radius: 0;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  -webkit-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  -o-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.delete:hover{
+  background-color: #FF1C10;
+  color: #fff;
+  border: 2px solid #FF1C10;
+  border-radius: 0;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  -webkit-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  -o-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+
+.all-posts{
+  background-color: #FFFFFF;
+  color: #000000;
+  border: 2px solid #000;
+  border-radius: 0;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  -webkit-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  -o-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.all-posts:hover{
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #000;
+  border-radius: 0;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  -webkit-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  -moz-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+  -o-transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
