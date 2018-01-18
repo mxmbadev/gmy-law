@@ -32,7 +32,7 @@ gem 'hover-rails', '~> 2.0', '>= 2.0.2'
 # WOW.js
 gem 'wow-rails', '~> 0.0.1'
 
-gem 'pygments.rb', '~> 0.6.3'
+gem 'pygments.rb'
 gem 'redcarpet', '~> 3.3', '>= 3.3.4'
 # URL NAME
 gem 'friendly_id', '~> 5.1'

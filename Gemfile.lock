@@ -96,10 +96,8 @@ GEM
       mini_portile2 (~> 2.3.0)
     orm_adapter (0.5.0)
     pg (1.0.0)
-    posix-spawn (0.3.13)
-    pygments.rb (0.6.3)
-      posix-spawn (~> 0.3.6)
-      yajl-ruby (~> 1.2.0)
+    pygments.rb (1.2.1)
+      multi_json (>= 1.0.0)
     rack (1.6.8)
     rack-test (0.6.3)
       rack (>= 1.0)
@@ -183,7 +181,6 @@ GEM
       railties (>= 4.0)
       sprockets-rails (>= 2.0, < 4.0)
     wow-rails (0.0.1)
-    yajl-ruby (1.2.3)
 
 PLATFORMS
   ruby
@@ -199,7 +196,7 @@ DEPENDENCIES
   jbuilder (~> 2.0)
   jquery-rails
   pg
-  pygments.rb (~> 0.6.3)
+  pygments.rb
   rails (= 4.2.7.1)
   rails_12factor
   redcarpet (~> 3.3, >= 3.3.4)
