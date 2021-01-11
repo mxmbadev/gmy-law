@@ -34,7 +34,7 @@ gem 'hover-rails', '~> 2.0', '>= 2.0.2'
 gem 'wow-rails', '~> 0.0.1'
 
 gem 'pygments.rb'
-gem 'redcarpet', '~> 3.3', '>= 3.3.4'
+gem 'redcarpet', '~> 3.5'
 # URL NAME
 gem 'friendly_id', '~> 5.1'
 
